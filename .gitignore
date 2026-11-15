@@ -1,0 +1,53 @@
+# ========== 构建产物（cmake/make 生成，可随时重建） ==========
+build/
+build*/
+cmake-build-*/
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+*.o
+*.a
+*.so
+*.so.*
+compile_commands.json
+
+# ========== 运行时数据（姓名 + 人脸特征 + 打卡记录，勿上传） ==========
+*.db
+*.db-wal
+*.db-shm
+*.sqlite
+*.sqlite3
+
+# ========== 模型权重（face_recognizer_fast.onnx 36.9MB） ==========
+
+models/*.onnx
+
+# ========== 日志 / 崩溃转储 ==========
+*.log
+core
+core.*
+vgcore.*
+*.dmp
+
+# ========== 编辑器 / IDE ==========
+.vscode/
+.idea/
+*.user
+*.user.*
+CMakeLists.txt.user*
+*.swp
+*.swo
+*~
+*.autosave
+
+# ========== 系统杂项 ==========
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ========== 备份文件（你习惯的 bak 系列） ==========
+*.bak
+*.bak[0-9]*
+*.orig
+*.rej
